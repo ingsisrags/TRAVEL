@@ -11,7 +11,6 @@ namespace Domain.Library.Editorial
   public  class Editorial
     {
         [Key]
-        [Column(TypeName = "Int(10)")]
         public int Id { get; set; }
 
         [Column(TypeName = "Varchar(45)")]

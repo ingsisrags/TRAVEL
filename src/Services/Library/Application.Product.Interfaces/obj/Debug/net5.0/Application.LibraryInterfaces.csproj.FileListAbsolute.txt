@@ -1,0 +1,17 @@
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Application.LibraryInterfaces.deps.json
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Application.LibraryInterfaces.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\ref\Application.LibraryInterfaces.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Application.LibraryInterfaces.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Domain.Library.Configuration.Dtos.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Domain.Library.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Domain.Library.Configuration.Dtos.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\net5.0\Domain.Library.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.csprojAssemblyReference.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.AssemblyInfo.cs
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.csproj.CoreCompileInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.csproj.CopyComplete
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\ref\Application.LibraryInterfaces.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\net5.0\Application.LibraryInterfaces.pdb

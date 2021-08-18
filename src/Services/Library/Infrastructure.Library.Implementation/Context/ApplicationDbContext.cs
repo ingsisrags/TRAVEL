@@ -1,5 +1,6 @@
 ﻿using Domain.Library.Autors;
 using Domain.Library.Books;
+using Domain.Library.Editorial;
 using Domain.Library.Inventory;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -13,16 +14,19 @@ namespace Infrastructure.Library.Implementation.Context
 
     public class ApplicationDbContext : DbContext
     {
-        public virtual DbSet<Autor> Autors { get; set; }
-        public virtual DbSet<Book> Books { get; set; }
+        public virtual DbSet<Autor> Autor { get; set; }
+        public virtual DbSet<Book> Book { get; set; }
         public virtual DbSet<BookAutor> BookAutors { get; set; }
+        public virtual DbSet<Editorial> Editorial { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
+        ////protected override void OnModelCreating(ModelBuilder modelBuilder)
+        ////{
+        ////    modelBuilder.Entity<BookAutor>()
+        ////  .HasKey(o => new { o.AutorId, o.BookISBN });
+        ////    base.OnModelCreating(modelBuilder);
+        ////}
     }
 }

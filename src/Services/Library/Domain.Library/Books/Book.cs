@@ -9,7 +9,6 @@ namespace Domain.Library.Books
     public class Book
     {
         [Key]
-        [Column(TypeName = "Int(10)")]
         public int ISBN { get; set; }
 
         [Column(TypeName = "Varchar(45)")]

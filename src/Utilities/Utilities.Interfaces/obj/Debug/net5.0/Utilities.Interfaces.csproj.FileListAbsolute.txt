@@ -1,0 +1,11 @@
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\bin\Debug\net5.0\Utilities.Interfaces.deps.json
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\bin\Debug\net5.0\Utilities.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\bin\Debug\net5.0\ref\Utilities.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\bin\Debug\net5.0\Utilities.Interfaces.pdb
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.AssemblyInfo.cs
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.csproj.CoreCompileInputs.cache
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\ref\Utilities.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.pdb

@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.Library
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Library.Implementation", "src\Services\Library\Application.Library.Implementation\Application.Library.Implementation.csproj", "{A17C7BD1-49EE-4CE6-9DA4-CB67812759D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Product.Interfaces", "src\Services\Library\Application.Product.Interfaces\Application.Product.Interfaces.csproj", "{2F916F11-48A0-4EB6-BF36-DB3102F8BD0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Library.Interfaces", "src\Services\Library\Application.Product.Interfaces\Application.Library.Interfaces.csproj", "{2F916F11-48A0-4EB6-BF36-DB3102F8BD0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Library", "src\Services\Library\Domain.Library\Domain.Library.csproj", "{EBD91CA2-8DC0-433B-8F89-884FB4E3E741}"
 EndProject

@@ -9,7 +9,6 @@ namespace Domain.Library.Autors
     public class Autor
     {
         [Key]
-        [Column(TypeName = "Int(10)")]
         public int Id { get; set; }
 
         [Column(TypeName = "Varchar(45)")]

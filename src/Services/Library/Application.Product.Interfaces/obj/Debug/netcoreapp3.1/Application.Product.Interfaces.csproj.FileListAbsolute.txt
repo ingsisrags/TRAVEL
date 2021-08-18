@@ -1,0 +1,9 @@
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\netcoreapp3.1\Application.Product.Interfaces.deps.json
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\netcoreapp3.1\Application.Product.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\bin\Debug\netcoreapp3.1\Application.Product.Interfaces.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\netcoreapp3.1\Application.Product.Interfaces.csprojAssemblyReference.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\netcoreapp3.1\Application.Product.Interfaces.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\netcoreapp3.1\Application.Product.Interfaces.AssemblyInfo.cs
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\netcoreapp3.1\Application.Product.Interfaces.csproj.CoreCompileInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\netcoreapp3.1\Application.Product.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Product.Interfaces\obj\Debug\netcoreapp3.1\Application.Product.Interfaces.pdb

@@ -1,7 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Product.Interfaces\Application.Library.Interfaces.csproj" />
+    <ProjectReference Include="..\Infrastructure.Library.Implementation\Infrastructure.Library.Implementation.csproj" />
+  </ItemGroup>
 
 </Project>

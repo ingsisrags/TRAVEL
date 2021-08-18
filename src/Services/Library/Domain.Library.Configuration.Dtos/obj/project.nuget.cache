@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cUlVBSZoRd15m03aYY59ZLwzd87+t/JyIJ1YM4W9SF6kiR5oEzH7+7pX4KdICRKUDolBdAjY4GUlMsntstmg0w==",
+  "dgSpecHash": "9f/fGfKXctNu7s8Fr0TBcx1OjXm6QJ7GT/3toGjjG8b18W20lFp05a1l/OlNYd1CFyQ9om3prf5W7okHK1Gbng==",
   "success": true,
   "projectFilePath": "C:\\TRAVEL\\TRAVEL\\src\\Services\\Library\\Domain.Library.Configuration.Dtos\\Domain.Library.Configuration.Dtos.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ricardo.gomez\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\ricardo.gomez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ricardo.gomez\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

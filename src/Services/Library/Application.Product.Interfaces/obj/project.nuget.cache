@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cLe0ybNRT+ZkXyCpRrNQxVfm8heW3hWbSEEjVij8+XUHUiTtWbZG2t5eT6th0DOsf1mCrfX3yAQmhoOpSxvn/g==",
+  "dgSpecHash": "FPEqNIPuZY0YmV4TVxlqjA5t3aLctVdPi8UdIsp6Z0EfIKnWOl5T0HZmBhtz9xPiDFHCc9nF7KpxB8/uSJekog==",
   "success": true,
-  "projectFilePath": "C:\\TRAVEL\\TRAVEL\\src\\Services\\Library\\Application.Product.Interfaces\\Application.Product.Interfaces.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\TRAVEL\\TRAVEL\\src\\Services\\Library\\Application.Product.Interfaces\\Application.Library.Interfaces.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricardo.gomez\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\ricardo.gomez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ricardo.gomez\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

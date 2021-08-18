@@ -1,0 +1,9 @@
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\bin\Debug\netcoreapp3.1\Application.Library.Implementation.deps.json
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\bin\Debug\netcoreapp3.1\Application.Library.Implementation.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\bin\Debug\netcoreapp3.1\Application.Library.Implementation.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\netcoreapp3.1\Application.Library.Implementation.csprojAssemblyReference.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\netcoreapp3.1\Application.Library.Implementation.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\netcoreapp3.1\Application.Library.Implementation.AssemblyInfo.cs
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\netcoreapp3.1\Application.Library.Implementation.csproj.CoreCompileInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\netcoreapp3.1\Application.Library.Implementation.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\netcoreapp3.1\Application.Library.Implementation.pdb

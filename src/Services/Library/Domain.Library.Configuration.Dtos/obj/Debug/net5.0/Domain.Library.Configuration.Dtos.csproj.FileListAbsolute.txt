@@ -1,0 +1,15 @@
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\bin\Debug\net5.0\Domain.Library.Configuration.Dtos.deps.json
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\bin\Debug\net5.0\Domain.Library.Configuration.Dtos.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\bin\Debug\net5.0\ref\Domain.Library.Configuration.Dtos.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\bin\Debug\net5.0\Domain.Library.Configuration.Dtos.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\bin\Debug\net5.0\Domain.Library.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\bin\Debug\net5.0\Domain.Library.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.csprojAssemblyReference.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.AssemblyInfo.cs
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.csproj.CoreCompileInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.csproj.CopyComplete
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\ref\Domain.Library.Configuration.Dtos.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library.Configuration.Dtos\obj\Debug\net5.0\Domain.Library.Configuration.Dtos.pdb

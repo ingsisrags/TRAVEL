@@ -1,0 +1,11 @@
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\bin\Debug\net5.0\Domain.Library.deps.json
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\bin\Debug\net5.0\Domain.Library.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\bin\Debug\net5.0\ref\Domain.Library.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\bin\Debug\net5.0\Domain.Library.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.AssemblyInfo.cs
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.csproj.CoreCompileInputs.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\ref\Domain.Library.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.pdb
