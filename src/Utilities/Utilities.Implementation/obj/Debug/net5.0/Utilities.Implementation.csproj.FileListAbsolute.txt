@@ -1,0 +1,5 @@
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Implementation\bin\Debug\net5.0\Utilities.Interfaces.dll
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Implementation\obj\Debug\net5.0\Utilities.Implementation.csprojAssemblyReference.cache
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Implementation\obj\Debug\net5.0\Utilities.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Implementation\obj\Debug\net5.0\Utilities.Implementation.AssemblyInfoInputs.cache
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Implementation\obj\Debug\net5.0\Utilities.Implementation.AssemblyInfo.cs

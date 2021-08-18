@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Domain.Library.Autor
+namespace Domain.Library.Autors
 {
     public class Autor
     {
+        [Key]
         [Column(TypeName = "Int(10)")]
         public int Id { get; set; }
 
