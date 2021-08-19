@@ -1,5 +1,6 @@
 using Application.Library.Implementation.Authors;
 using Application.Library.Implementation.Books;
+using Application.Library.Implementation.Editorials;
 using Application.Library.Interfaces;
 using Application.Library.Interfaces.Authors;
 using AutoMapper;
@@ -51,6 +52,7 @@ namespace DistributedServices.Library
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBookService, BookService>();
             services.AddScoped<IAuthorService, AuthorService>();
+            services.AddScoped<IEditorialService, EditorialService>();
 
             MapperConfiguration mappingConfig = new MapperConfiguration(config =>
             {

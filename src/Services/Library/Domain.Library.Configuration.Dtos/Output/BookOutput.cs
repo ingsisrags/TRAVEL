@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Library.Configuration.Dtos.Output
 {
-   public class BookOutput
+    public class BookOutput
     {
         public int ISBN { get; set; }
 
@@ -14,5 +14,7 @@ namespace Domain.Library.Configuration.Dtos.Output
 
         public string Synopsis { get; set; }
         public int Pages { get; set; }
+        public EditorialOutput Editorial {get;set;}
+        public List<AuthorOutput>  Authors { get; set; }
     }
 }

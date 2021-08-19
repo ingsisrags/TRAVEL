@@ -65,3 +65,5 @@ C:\TRAVEL\TRAVEL\src\Services\Library\DistributedServices.Library\obj\Debug\net5
 C:\TRAVEL\TRAVEL\src\Services\Library\DistributedServices.Library\obj\Debug\net5.0\ref\DistributedServices.Library.dll
 C:\TRAVEL\TRAVEL\src\Services\Library\DistributedServices.Library\obj\Debug\net5.0\DistributedServices.Library.pdb
 C:\TRAVEL\TRAVEL\src\Services\Library\DistributedServices.Library\obj\Debug\net5.0\DistributedServices.Library.genruntimeconfig.cache
+C:\TRAVEL\TRAVEL\src\Services\Library\DistributedServices.Library\bin\Debug\net5.0\Utilities.Configuration.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\DistributedServices.Library\bin\Debug\net5.0\Utilities.Configuration.pdb

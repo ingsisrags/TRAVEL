@@ -9,3 +9,4 @@ C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Configuration\obj\Debug\net5.0\Utilitie
 C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Configuration\obj\Debug\net5.0\Utilities.Configuration.dll
 C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Configuration\obj\Debug\net5.0\ref\Utilities.Configuration.dll
 C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Configuration\obj\Debug\net5.0\Utilities.Configuration.pdb
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Configuration\obj\Debug\net5.0\Utilities.Configuration.csprojAssemblyReference.cache

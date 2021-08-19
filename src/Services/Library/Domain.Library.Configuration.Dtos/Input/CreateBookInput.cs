@@ -16,9 +16,11 @@ namespace Domain.Library.Configuration.Dtos.Input
         [Required]
         [MaxLength(45, ErrorMessage = "The synopsis is very long")]
         public string Synopsis { get; set; }
+        [Required]
         public int Pages { get; set; }
-
-        public int AutorId { get; set; }
+        [Required]
+        public List<int> Authors { get; set; }
+        [Required]
         public int EditorialId { get; set; }
     }
 }

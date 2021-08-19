@@ -1540,6 +1540,16 @@
         "runtime": {
           "bin/placeholder/Infrastructure.Library.Implementation.dll": {}
         }
+      },
+      "Utilities.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Utilities.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities.Configuration.dll": {}
+        }
       }
     }
   },
@@ -5807,13 +5817,19 @@
       "type": "project",
       "path": "../Infrastructure.Library.Implementation/Infrastructure.Library.Implementation.csproj",
       "msbuildProject": "../Infrastructure.Library.Implementation/Infrastructure.Library.Implementation.csproj"
+    },
+    "Utilities.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../../../Utilities/Utilities.Configuration/Utilities.Configuration.csproj",
+      "msbuildProject": "../../../Utilities/Utilities.Configuration/Utilities.Configuration.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Application.Library.Interfaces >= 1.0.0",
       "AutoMapper >= 10.1.1",
-      "Infrastructure.Library.Implementation >= 1.0.0"
+      "Infrastructure.Library.Implementation >= 1.0.0",
+      "Utilities.Configuration >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5848,6 +5864,9 @@
             },
             "C:\\TRAVEL\\TRAVEL\\src\\Services\\Library\\Infrastructure.Library.Implementation\\Infrastructure.Library.Implementation.csproj": {
               "projectPath": "C:\\TRAVEL\\TRAVEL\\src\\Services\\Library\\Infrastructure.Library.Implementation\\Infrastructure.Library.Implementation.csproj"
+            },
+            "C:\\TRAVEL\\TRAVEL\\src\\Utilities\\Utilities.Configuration\\Utilities.Configuration.csproj": {
+              "projectPath": "C:\\TRAVEL\\TRAVEL\\src\\Utilities\\Utilities.Configuration\\Utilities.Configuration.csproj"
             }
           }
         }

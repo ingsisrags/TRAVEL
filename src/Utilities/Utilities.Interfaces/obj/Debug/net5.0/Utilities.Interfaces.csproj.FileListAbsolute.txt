@@ -9,3 +9,4 @@ C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.I
 C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.dll
 C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\ref\Utilities.Interfaces.dll
 C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.pdb
+C:\TRAVEL\TRAVEL\src\Utilities\Utilities.Interfaces\obj\Debug\net5.0\Utilities.Interfaces.csprojAssemblyReference.cache

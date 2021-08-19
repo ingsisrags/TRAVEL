@@ -92,7 +92,7 @@ namespace Infrastructure.Library.Implementation.Migrations
 
                     b.HasIndex("AutorId");
 
-                    b.ToTable("BookAutors");
+                    b.ToTable("BookAuthor");
                 });
 
             modelBuilder.Entity("Domain.Library.Books.Book", b =>
@@ -108,7 +108,7 @@ namespace Infrastructure.Library.Implementation.Migrations
 
             modelBuilder.Entity("Domain.Library.Inventory.BookAuthor", b =>
                 {
-                    b.HasOne("Domain.Library.Authors.Author", "Autor")
+                    b.HasOne("Domain.Library.Authors.Author", "Author")
                         .WithMany()
                         .HasForeignKey("AutorId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -120,7 +120,7 @@ namespace Infrastructure.Library.Implementation.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Autor");
+                    b.Navigation("Author");
 
                     b.Navigation("Book");
                 });

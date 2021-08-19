@@ -19,6 +19,6 @@ namespace Domain.Library.Inventory
         public Book Book { get; set; }
 
         [ForeignKey("AutorId")]
-        public Author Autor { get; set; }
+        public Author Author { get; set; }
     }
 }

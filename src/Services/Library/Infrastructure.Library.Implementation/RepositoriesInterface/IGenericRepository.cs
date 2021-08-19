@@ -15,5 +15,7 @@ namespace Infrastructure.Library.Implementation.Repositories
         Task<bool> Delete(int id);
         Task<bool> Upsert(T entity);
         Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate);
+        IQueryable<T> GetAll();
+
     }
 }

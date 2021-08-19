@@ -57,7 +57,7 @@ namespace Infrastructure.Library.Implementation.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "BookAutors",
+                name: "BookAuthor",
                 columns: table => new
                 {
                     AutorId = table.Column<int>(type: "int", nullable: false),
@@ -65,15 +65,15 @@ namespace Infrastructure.Library.Implementation.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookAutors", x => new { x.BookISBN, x.AutorId });
+                    table.PrimaryKey("PK_BookAuthor", x => new { x.BookISBN, x.AutorId });
                     table.ForeignKey(
-                        name: "FK_BookAutors_Author_AutorId",
+                        name: "FK_BookAuthor_Author_AutorId",
                         column: x => x.AutorId,
                         principalTable: "Author",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_BookAutors_Book_BookISBN",
+                        name: "FK_BookAuthor_Book_BookISBN",
                         column: x => x.BookISBN,
                         principalTable: "Book",
                         principalColumn: "ISBN",
@@ -86,15 +86,15 @@ namespace Infrastructure.Library.Implementation.Migrations
                 column: "EditorialId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookAutors_AutorId",
-                table: "BookAutors",
+                name: "IX_BookAuthor_AutorId",
+                table: "BookAuthor",
                 column: "AutorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "BookAutors");
+                name: "BookAuthor");
 
             migrationBuilder.DropTable(
                 name: "Author");

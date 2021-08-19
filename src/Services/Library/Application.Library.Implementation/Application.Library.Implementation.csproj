@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\Utilities.Configuration\Utilities.Configuration.csproj" />
     <ProjectReference Include="..\Application.Product.Interfaces\Application.Library.Interfaces.csproj" />
     <ProjectReference Include="..\Infrastructure.Library.Implementation\Infrastructure.Library.Implementation.csproj" />
   </ItemGroup>

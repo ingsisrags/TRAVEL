@@ -27,6 +27,21 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
             }
         }
 
+        public IQueryable<Book> GetAll()
+        {
+            try
+            {
+                IQueryable<Book> query = dbSet;
+                return query;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} All function error", typeof(Book));
+                return null;
+            }
+        }
+
+
         public async Task<bool> Upsert(Book entity)
         {
             try

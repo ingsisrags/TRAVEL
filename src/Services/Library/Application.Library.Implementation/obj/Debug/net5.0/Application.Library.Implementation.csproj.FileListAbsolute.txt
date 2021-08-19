@@ -19,3 +19,5 @@ C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Deb
 C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\net5.0\Application.Library.Implementation.dll
 C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\net5.0\ref\Application.Library.Implementation.dll
 C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\obj\Debug\net5.0\Application.Library.Implementation.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\bin\Debug\net5.0\Utilities.Configuration.dll
+C:\TRAVEL\TRAVEL\src\Services\Library\Application.Library.Implementation\bin\Debug\net5.0\Utilities.Configuration.pdb

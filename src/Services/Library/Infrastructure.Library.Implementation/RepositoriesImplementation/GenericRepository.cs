@@ -55,5 +55,11 @@ namespace Infrastructure.Library.Implementation.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public virtual IQueryable<T> GetAll()
+        {
+            IQueryable<T> query = dbSet;
+            return query;
+        }
     }
 }

@@ -10,7 +10,8 @@
         "dependencies": {
           "Application.Library.Interfaces": "1.0.0",
           "AutoMapper": "10.1.1",
-          "Infrastructure.Library.Implementation": "1.0.0"
+          "Infrastructure.Library.Implementation": "1.0.0",
+          "Utilities.Configuration": "1.0.0"
         },
         "runtime": {
           "Application.Library.Implementation.dll": {}
@@ -1077,6 +1078,11 @@
         "runtime": {
           "Infrastructure.Library.Implementation.dll": {}
         }
+      },
+      "Utilities.Configuration/1.0.0": {
+        "runtime": {
+          "Utilities.Configuration.dll": {}
+        }
       }
     }
   },
@@ -1767,6 +1773,11 @@
       "sha512": ""
     },
     "Infrastructure.Library.Implementation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utilities.Configuration/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

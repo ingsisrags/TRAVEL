@@ -16,7 +16,7 @@ namespace Infrastructure.Library.Implementation.Context
     {
         public virtual DbSet<Author> Author { get; set; }
         public virtual DbSet<Book> Book { get; set; }
-        public virtual DbSet<BookAuthor> BookAutors { get; set; }
+        public virtual DbSet<BookAuthor> BookAuthor { get; set; }
         public virtual DbSet<Editorial> Editorial { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
