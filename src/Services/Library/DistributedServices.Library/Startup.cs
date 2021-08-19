@@ -16,8 +16,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -35,8 +37,7 @@ namespace DistributedServices.Library
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //var connectionString = Environment.GetEnvironmentVariable("SQL_SERVER_CONNECTION");
-            var connectionString = Configuration["ConnectionStrings:DefaultConnection"];
+            var connectionString = Environment.GetEnvironmentVariable("SQL_SERVER_CONNECTION");
             var migrationsAssembly = "Infrastructure.Library.Implementation";
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -48,6 +49,20 @@ namespace DistributedServices.Library
                }),
                ServiceLifetime.Scoped
            );
+
+            services.AddSwaggerGen(options =>
+            {
+                options.CustomSchemaIds(type => type.ToString());
+                options.UseInlineDefinitionsForEnums();
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Library - HTTP API",
+                    Version = "v1",
+                    Description = "The library service HTTP API"
+                });
+            });
+
+            services.AddSwaggerGenNewtonsoftSupport();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBookService, BookService>();
@@ -87,6 +102,20 @@ namespace DistributedServices.Library
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger(setup =>
+            {
+                setup.PreSerializeFilters.Add((swagger, httpReq) =>
+                {
+                    swagger.Servers = new List<OpenApiServer> { new OpenApiServer { Url = "" } };
+                });
+            })
+           .UseSwaggerUI(setup =>
+           {
+               setup.SwaggerEndpoint("/swagger/v1/swagger.json", "Library.API V1");
+               setup.OAuthClientId("waggerui");
+               setup.OAuthAppName("Swagger UI");
+           });
         }
 
         private static void UpdateDatabase(IApplicationBuilder app)

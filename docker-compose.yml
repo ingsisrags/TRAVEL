@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2017-latest 
+    environment:
+        SA_PASSWORD: "Pass@word"
+        ACCEPT_EULA: "Y"
+    ports:
+        - "5002:1433"
+    volumes:
+      - data:/var/opt/mssql/data
+
+  library-service:
+    image: ${REGISTRY-library}library.api:${PLATFORM:-linux}-${TAG:-latest}
+    container_name:  library-service
+    environment:
+        ASPNETCORE_ENVIRONMENT: "Development"
+        SQL_SERVER_CONNECTION: "Server=sqldata; Database=LibraryDb; User=sa; Password=Pass@word;"
+    ports:
+        - "5003:80"
+    depends_on:
+      - sqldata
+    build:
+      context: .
+      dockerfile: src/Services/Library/DistributedServices.Library/Dockerfile
+ 
+volumes:
+  data:
