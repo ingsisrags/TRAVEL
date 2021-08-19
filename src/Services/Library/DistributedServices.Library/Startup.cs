@@ -60,6 +60,7 @@ namespace DistributedServices.Library
                     Version = "v1",
                     Description = "The library service HTTP API"
                 });
+                ;
             });
 
             services.AddSwaggerGenNewtonsoftSupport();
