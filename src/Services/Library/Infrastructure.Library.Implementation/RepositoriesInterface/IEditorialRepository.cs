@@ -1,4 +1,4 @@
-﻿using Domain.Library.Editorial;
+﻿using Domain.Library.Editorials;
 using Infrastructure.Library.Implementation.Repositories;
 using System;
 using System.Collections.Generic;

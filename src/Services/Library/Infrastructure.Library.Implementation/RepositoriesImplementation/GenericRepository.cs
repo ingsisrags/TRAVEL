@@ -25,18 +25,18 @@ namespace Infrastructure.Library.Implementation.Repositories
             _logger = logger;
         }
 
-        public virtual async Task<T> GetById(Guid id)
+        public virtual async Task<T> GetById(int id)
         {
             return await dbSet.FindAsync(id);
         }
 
-        public virtual async Task<bool> Add(T entity)
+        public async Task<T> Add(T entity)
         {
-            await dbSet.AddAsync(entity);
-            return true;
+            var result = await dbSet.AddAsync(entity);
+            return result.Entity;
         }
 
-        public virtual Task<bool> Delete(Guid id)
+        public virtual Task<bool> Delete(int id)
         {
             throw new NotImplementedException();
         }

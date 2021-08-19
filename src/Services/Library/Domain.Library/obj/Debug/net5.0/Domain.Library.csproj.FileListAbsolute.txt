@@ -9,3 +9,4 @@ C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Lib
 C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.dll
 C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\ref\Domain.Library.dll
 C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.pdb
+C:\TRAVEL\TRAVEL\src\Services\Library\Domain.Library\obj\Debug\net5.0\Domain.Library.csprojAssemblyReference.cache

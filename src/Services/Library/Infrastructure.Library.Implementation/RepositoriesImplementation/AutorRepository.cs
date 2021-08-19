@@ -1,4 +1,4 @@
-﻿using Domain.Library.Autors;
+﻿using Domain.Library.Authors;
 using Infrastructure.Library.Implementation.Context;
 using Infrastructure.Library.Implementation.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Implementation.RepositoriesImplementation
 {
-    public class AutorRepository  : GenericRepository<Autor>, IAutorRepository
+    public class AutorRepository  : GenericRepository<Author>, IAutorRepository
     {
         public AutorRepository(ApplicationDbContext context, ILogger logger) : base(context, logger) { }
-        public override async Task<IEnumerable<Autor>> All()
+        public override async Task<IEnumerable<Author>> All()
         {
             try
             {
@@ -22,12 +22,12 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} All function error", typeof(Autor));
-                return new List<Autor>();
+                _logger.LogError(ex, "{Repo} All function error", typeof(Author));
+                return new List<Author>();
             }
         }
 
-        public  async Task<bool> Upsert(Autor entity)
+        public  async Task<bool> Upsert(Author entity)
         {
             try
             {
@@ -35,14 +35,14 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
                                                     .FirstOrDefaultAsync();
 
                 if (existingUser == null)
-                    return await Add(entity);
+                    await Add(entity);
 
 
                 return true;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} Upsert function error", typeof(Autor));
+                _logger.LogError(ex, "{Repo} Upsert function error", typeof(Author));
                 return false;
             }
         }
@@ -62,7 +62,7 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} Delete function error", typeof(Autor));
+                _logger.LogError(ex, "{Repo} Delete function error", typeof(Author));
                 return false;
             }
         }

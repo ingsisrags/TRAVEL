@@ -1,4 +1,4 @@
-﻿using Domain.Library.Autors;
+﻿using Domain.Library.Authors;
 using Domain.Library.Books;
 using System;
 using System.Collections.Generic;
@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Library.Inventory
 {
-    public class BookAutor
+    public class BookAuthor
     {
-        [Key]
         public int AutorId { get; set; }
         public int BookISBN { get; set; }
 
@@ -20,6 +19,6 @@ namespace Domain.Library.Inventory
         public Book Book { get; set; }
 
         [ForeignKey("AutorId")]
-        public Autor Autor { get; set; }
+        public Author Autor { get; set; }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Application.Library.Interfaces;
 using AutoMapper;
+using Domain.Library.Books;
+using Domain.Library.Configuration.Dtos.Input;
 using Domain.Library.Configuration.Dtos.Output;
 using Infrastructure.Library.Implementation.RepositoriesInterface;
 using Microsoft.Extensions.Logging;
@@ -22,10 +24,25 @@ namespace Application.Library.Implementation.Books
             _logger = logger;
             _mapper = mapper;
         }
+
+        public async Task<BookOutput> Create(CreateBookInput input)
+        {
+            var book = _mapper.Map<Book>(input);
+            var result = await _unitOfWork.Book.Add(book);
+            await _unitOfWork.CompleteAsync();
+            return _mapper.Map<BookOutput>(result);
+        }
+
         public async Task<IEnumerable<BookOutput>> GetAll()
         {
             var result = await _unitOfWork.Book.All();
             return _mapper.Map<IEnumerable<BookOutput>>(result);
+        }
+
+        public async Task<BookOutput> GetById(int id)
+        {
+            var result = await _unitOfWork.Book.GetById(id);
+            return _mapper.Map<BookOutput>(result);
         }
     }
 }

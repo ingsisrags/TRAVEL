@@ -1,4 +1,4 @@
-﻿using Domain.Library.Editorial;
+﻿using Domain.Library.Editorials;
 using Infrastructure.Library.Implementation.Context;
 using Infrastructure.Library.Implementation.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -35,7 +35,7 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
                                                     .FirstOrDefaultAsync();
 
                 if (existingUser == null)
-                    return await Add(entity);
+                     await Add(entity);
 
 
                 return true;

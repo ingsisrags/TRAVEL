@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Library.Interfaces;
+using Domain.Library.Configuration.Dtos.Input;
+using Domain.Library.Configuration.Dtos.Output;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,30 +15,32 @@ namespace DistributedServices.Library.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
-        public BookController()
-        { 
-        
+        private readonly IBookService _bookService;
+        public BookController(IBookService bookService)
+        {
+            _bookService = bookService;
         }
         
         // GET: api/<BookController>
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<BookOutput>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await _bookService.GetAll();
         }
 
         // GET api/<BookController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<BookOutput> Get(int id)
         {
-            return "value";
+            return await _bookService.GetById(id);
         }
 
         // POST api/<BookController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<BookOutput> Post([FromBody] CreateBookInput input)
         {
+            return await _bookService.Create(input);
         }
 
         // PUT api/<BookController>/5

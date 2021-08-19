@@ -35,7 +35,7 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
                                                     .FirstOrDefaultAsync();
 
                 if (existingUser == null)
-                    return await Add(entity);
+                    await Add(entity);
 
 
                 return true;

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Implementation.Context
 {
-    public interface IBookAutorRepository : IGenericRepository<BookAutor>
+    public interface IBookAutorRepository : IGenericRepository<BookAuthor>
     {
     }
 }

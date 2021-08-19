@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Implementation.RepositoriesImplementation
 {
-    public class AutorBookRepository : GenericRepository<BookAutor>, IBookAutorRepository
+    public class AutorBookRepository : GenericRepository<BookAuthor>, IBookAutorRepository
     {
         public AutorBookRepository(ApplicationDbContext context, ILogger logger) : base(context, logger) { }
-        public override async Task<IEnumerable<BookAutor>> All()
+        public override async Task<IEnumerable<BookAuthor>> All()
         {
             try
             {
@@ -22,12 +22,12 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} All function error", typeof(BookAutor));
-                return new List<BookAutor>();
+                _logger.LogError(ex, "{Repo} All function error", typeof(BookAuthor));
+                return new List<BookAuthor>();
             }
         }
 
-        public async Task<bool> Upsert(BookAutor entity)
+        public async Task<bool> Upsert(BookAuthor entity)
         {
             try
             {
@@ -37,19 +37,19 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
                   .FirstOrDefaultAsync();
 
                 if (existingUser == null)
-                    return await Add(entity);
+                     await Add(entity);
 
 
                 return true;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} Upsert function error", typeof(BookAutor));
+                _logger.LogError(ex, "{Repo} Upsert function error", typeof(BookAuthor));
                 return false;
             }
         }
 
-        public async Task<bool> Delete(BookAutor entity)
+        public async Task<bool> Delete(BookAuthor entity)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace Infrastructure.Library.Implementation.RepositoriesImplementation
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} Delete function error", typeof(BookAutor));
+                _logger.LogError(ex, "{Repo} Delete function error", typeof(BookAuthor));
                 return false;
             }
         }

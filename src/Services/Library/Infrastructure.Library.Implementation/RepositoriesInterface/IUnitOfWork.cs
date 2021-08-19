@@ -9,8 +9,8 @@ namespace Infrastructure.Library.Implementation.RepositoriesInterface
 {
     public interface IUnitOfWork
     {
-        IAutorRepository Autors { get; }
-        IBookAutorRepository BookAutor { get; }
+        IAutorRepository Authors { get; }
+        IBookAutorRepository BookAuthor { get; }
         IEditorialRepository Editorial { get; }
         IBookRepository Book { get; }
 

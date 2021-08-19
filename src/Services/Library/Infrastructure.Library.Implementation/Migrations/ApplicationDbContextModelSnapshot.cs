@@ -18,7 +18,7 @@ namespace Infrastructure.Library.Implementation.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Domain.Library.Autors.Autor", b =>
+            modelBuilder.Entity("Domain.Library.Authors.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,7 +33,7 @@ namespace Infrastructure.Library.Implementation.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Autor");
+                    b.ToTable("Author");
                 });
 
             modelBuilder.Entity("Domain.Library.Books.Book", b =>
@@ -42,6 +42,9 @@ namespace Infrastructure.Library.Implementation.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("EditorialId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Pages")
                         .HasColumnType("int");
@@ -54,10 +57,12 @@ namespace Infrastructure.Library.Implementation.Migrations
 
                     b.HasKey("ISBN");
 
+                    b.HasIndex("EditorialId");
+
                     b.ToTable("Book");
                 });
 
-            modelBuilder.Entity("Domain.Library.Editorial.Editorial", b =>
+            modelBuilder.Entity("Domain.Library.Editorials.Editorial", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -75,24 +80,35 @@ namespace Infrastructure.Library.Implementation.Migrations
                     b.ToTable("Editorial");
                 });
 
-            modelBuilder.Entity("Domain.Library.Inventory.BookAutor", b =>
+            modelBuilder.Entity("Domain.Library.Inventory.BookAuthor", b =>
                 {
-                    b.Property<int>("AutorId")
-                        .HasColumnType("int");
-
                     b.Property<int>("BookISBN")
                         .HasColumnType("int");
 
-                    b.HasKey("AutorId");
+                    b.Property<int>("AutorId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("BookISBN");
+                    b.HasKey("BookISBN", "AutorId");
+
+                    b.HasIndex("AutorId");
 
                     b.ToTable("BookAutors");
                 });
 
-            modelBuilder.Entity("Domain.Library.Inventory.BookAutor", b =>
+            modelBuilder.Entity("Domain.Library.Books.Book", b =>
                 {
-                    b.HasOne("Domain.Library.Autors.Autor", "Autor")
+                    b.HasOne("Domain.Library.Editorials.Editorial", "Editorial")
+                        .WithMany()
+                        .HasForeignKey("EditorialId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Editorial");
+                });
+
+            modelBuilder.Entity("Domain.Library.Inventory.BookAuthor", b =>
+                {
+                    b.HasOne("Domain.Library.Authors.Author", "Autor")
                         .WithMany()
                         .HasForeignKey("AutorId")
                         .OnDelete(DeleteBehavior.Cascade)

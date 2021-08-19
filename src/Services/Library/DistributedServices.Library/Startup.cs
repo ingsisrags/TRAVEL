@@ -1,5 +1,7 @@
+using Application.Library.Implementation.Authors;
 using Application.Library.Implementation.Books;
 using Application.Library.Interfaces;
+using Application.Library.Interfaces.Authors;
 using AutoMapper;
 using Infrastructure.Library.Implementation.Context;
 using Infrastructure.Library.Implementation.RepositoriesImplementation;
@@ -32,7 +34,8 @@ namespace DistributedServices.Library
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = Environment.GetEnvironmentVariable("SQL_SERVER_CONNECTION");
+            //var connectionString = Environment.GetEnvironmentVariable("SQL_SERVER_CONNECTION");
+            var connectionString = Configuration["ConnectionStrings:DefaultConnection"];
             var migrationsAssembly = "Infrastructure.Library.Implementation";
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -47,6 +50,7 @@ namespace DistributedServices.Library
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IAuthorService, AuthorService>();
 
             MapperConfiguration mappingConfig = new MapperConfiguration(config =>
             {

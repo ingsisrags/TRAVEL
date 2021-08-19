@@ -7,7 +7,7 @@ namespace Infrastructure.Library.Implementation.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Autor",
+                name: "Author",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -17,22 +17,7 @@ namespace Infrastructure.Library.Implementation.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Autor", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Book",
-                columns: table => new
-                {
-                    ISBN = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Tittle = table.Column<string>(type: "Varchar(45)", nullable: true),
-                    Synopsis = table.Column<string>(type: "Varchar(45)", nullable: true),
-                    Pages = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Book", x => x.ISBN);
+                    table.PrimaryKey("PK_Author", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -50,6 +35,28 @@ namespace Infrastructure.Library.Implementation.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Book",
+                columns: table => new
+                {
+                    ISBN = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Tittle = table.Column<string>(type: "Varchar(45)", nullable: true),
+                    Synopsis = table.Column<string>(type: "Varchar(45)", nullable: true),
+                    Pages = table.Column<int>(type: "int", nullable: false),
+                    EditorialId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Book", x => x.ISBN);
+                    table.ForeignKey(
+                        name: "FK_Book_Editorial_EditorialId",
+                        column: x => x.EditorialId,
+                        principalTable: "Editorial",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "BookAutors",
                 columns: table => new
                 {
@@ -58,11 +65,11 @@ namespace Infrastructure.Library.Implementation.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookAutors", x => x.AutorId);
+                    table.PrimaryKey("PK_BookAutors", x => new { x.BookISBN, x.AutorId });
                     table.ForeignKey(
-                        name: "FK_BookAutors_Autor_AutorId",
+                        name: "FK_BookAutors_Author_AutorId",
                         column: x => x.AutorId,
-                        principalTable: "Autor",
+                        principalTable: "Author",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -74,9 +81,14 @@ namespace Infrastructure.Library.Implementation.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookAutors_BookISBN",
+                name: "IX_Book_EditorialId",
+                table: "Book",
+                column: "EditorialId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BookAutors_AutorId",
                 table: "BookAutors",
-                column: "BookISBN");
+                column: "AutorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -85,13 +97,13 @@ namespace Infrastructure.Library.Implementation.Migrations
                 name: "BookAutors");
 
             migrationBuilder.DropTable(
-                name: "Editorial");
-
-            migrationBuilder.DropTable(
-                name: "Autor");
+                name: "Author");
 
             migrationBuilder.DropTable(
                 name: "Book");
+
+            migrationBuilder.DropTable(
+                name: "Editorial");
         }
     }
 }

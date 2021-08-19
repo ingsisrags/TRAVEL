@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Domain.Library.Autors
+namespace Domain.Library.Authors
 {
-    public class Autor
+    public class Author
     {
         [Key]
         public int Id { get; set; }

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Library.Editorial
+namespace Domain.Library.Editorials
 {
   public  class Editorial
     {
